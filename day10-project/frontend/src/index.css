@@ -1,0 +1,202 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+:root {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color-scheme: dark;
+}
+
+code, pre, kbd {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ============================================================
+   3D PERSPECTIVE UTILITIES
+   ============================================================ */
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.perspective-1500 {
+  perspective: 1500px;
+}
+
+.perspective-2000 {
+  perspective: 2000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* ============================================================
+   3D DEPTH CARDS & NEUMORPHIC / CYBER GLASS
+   ============================================================ */
+
+.cyber-card-3d {
+  position: relative;
+  background: linear-gradient(135deg, rgba(14, 20, 34, 0.85) 0%, rgba(8, 12, 22, 0.92) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 
+    0 15px 35px -5px rgba(0, 0, 0, 0.65),
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+    0 1px 0 0 rgba(255, 255, 255, 0.12) inset;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.cyber-card-3d:hover {
+  border-color: rgba(99, 102, 241, 0.25);
+  box-shadow: 
+    0 20px 45px -10px rgba(0, 0, 0, 0.8),
+    0 0 20px -5px rgba(56, 189, 248, 0.1),
+    0 0 0 1px rgba(99, 102, 241, 0.15) inset,
+    0 1px 0 0 rgba(255, 255, 255, 0.2) inset;
+}
+
+/* 3D Button effect with clear tactile states */
+.btn-3d {
+  position: relative;
+  transform: translateZ(0);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.15s ease, border-color 0.15s ease;
+  box-shadow: 
+    0 4px 12px rgba(0, 0, 0, 0.4),
+    0 1px 0 rgba(255, 255, 255, 0.18) inset,
+    0 -2px 0 rgba(0, 0, 0, 0.4) inset;
+}
+
+.btn-3d:hover:not(:disabled) {
+  transform: translateY(-1.5px) translateZ(3px);
+  box-shadow: 
+    0 8px 18px rgba(0, 0, 0, 0.5),
+    0 0 12px rgba(99, 102, 241, 0.25),
+    0 1px 0 rgba(255, 255, 255, 0.25) inset,
+    0 -2px 0 rgba(0, 0, 0, 0.4) inset;
+}
+
+.btn-3d:active:not(:disabled) {
+  transform: translateY(1px) translateZ(0);
+  box-shadow: 
+    0 2px 6px rgba(0, 0, 0, 0.4),
+    0 1px 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+/* Focus visibility for accessibility */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid #38bdf8;
+  outline-offset: 2px;
+}
+
+/* Ambient Subtle Grid pattern */
+.bg-grid-cyber {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+.bg-radial-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.06) 0%, rgba(99, 102, 241, 0.03) 40%, transparent 70%);
+}
+
+/* Glowing ring animations */
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-slow-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes float-subtle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes pulse-ring {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.02);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 22s linear infinite;
+}
+
+.animate-spin-slow-reverse {
+  animation: spin-slow-reverse 28s linear infinite;
+}
+
+.animate-float {
+  animation: float-subtle 6s ease-in-out infinite;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 4s ease-in-out infinite;
+}
+
+/* Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-spin-slow,
+  .animate-spin-slow-reverse,
+  .animate-float,
+  .animate-pulse-ring {
+    animation: none !important;
+  }
+}
+
+/* Custom Sleek Dark Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(5, 7, 14, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.4);
+}

@@ -1,0 +1,112 @@
+{
+  "name": "Laksh Raj",
+
+  "education": {
+    "degree": "B.Tech in Information Technology",
+    "college": "Asansol Engineering College",
+    "cgpa": "7/10",
+    "graduation_year": "2027"
+  },
+
+  "skills": [
+    "Python",
+    "JavaScript",
+    "Java",
+    "REST API Design",
+    "Node.js",
+    "Express.js",
+    "FastAPI",
+    "JSON",
+    "PostgreSQL",
+    "MongoDB",
+    "SQL",
+    "NumPy",
+    "Pandas",
+    "Matplotlib",
+    "Seaborn",
+    "JWT",
+    "Role-Based Access Control (RBAC)",
+    "bcrypt",
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Render",
+    "Vercel",
+    "Vite",
+    "Manual Test-Case Design",
+    "Input Validation",
+    "Security Checks"
+  ],
+
+  "projects": [
+    {
+      "name": "Monetrik",
+      "description": "Full-Stack Finance Dashboard",
+      "technologies": [
+        "MERN",
+        "JWT",
+        "bcrypt"
+      ],
+      "details": [
+        "Built a finance dashboard with three permission tiers: Admin, Analyst, Viewer.",
+        "Implemented rule-based access checks at API and frontend layers.",
+        "Designed reusable access-control checks across endpoints.",
+        "Ran a 32-case manual QA suite covering rule outputs, input validation, and XSS checks.",
+        "Deployed the backend on Render and frontend on Vercel."
+      ]
+    },
+
+    {
+      "name": "Agency React Website",
+      "description": "Modern agency landing page",
+      "technologies": [
+        "React",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Vite"
+      ],
+      "details": [
+        "Built Hero, Services, Our Work, Team, and Contact sections.",
+        "Added animated cursor, dark/light theme toggle, and smooth transitions.",
+        "Added form notifications using React Hot Toast.",
+        "Deployed the website using GitHub Pages."
+      ]
+    },
+
+    {
+      "name": "CareerCopilot AI",
+      "description": "Multi-Agent Placement Suite",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "Google ADK",
+        "Gemini"
+      ],
+      "details": [
+        "Built a working prototype for a multi-agent campus placement workflow.",
+        "Developed as a Kaggle capstone entry.",
+        "Added API-level PII redaction.",
+        "Added prompt-injection defense in the FastAPI backend."
+      ]
+    }
+  ],
+
+  "experience": [],
+
+  "achievements": [],
+
+  "certifications": [
+    {
+      "name": "Front-End Software Engineering Job Simulation",
+      "provider": "Forage",
+      "date": "May 2026",
+      "details": "Built a React-based web application covering component structure, state management, and UI implementation."
+    }
+  ],
+
+  "social_links": {
+  "github": "https://github.com/lakshr2004",
+  "linkedin": "https://linkedin.com/in/laksh-raj-0b14ab298/",
+  "portfolio": ""
+}
+}
