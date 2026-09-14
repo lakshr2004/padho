@@ -2,11 +2,28 @@
   "name": "Laksh Raj",
 
   "education": {
+  "bachelors": {
     "degree": "B.Tech in Information Technology",
     "college": "Asansol Engineering College",
-    "cgpa": "7/10",
-    "graduation_year": "2027"
+    "gpa": "7/10",
+    "start_year": 2023,
+    "graduation_year": 2027
   },
+  "higher_secondary": {
+    "level": "Higher Secondary Education",
+    "school": "St. Stephen School, HZB",
+    "board": "CBSE",
+    "start_year": 2022,
+    "completion_year": 2023
+  },
+  "secondary": {
+    "level": "Secondary Education",
+    "school": "Techno India Group Public School, Bolpur, WB",
+    "board": "CBSE",
+    "start_year": 2020,
+    "completion_year": 2021
+  }
+},
 
   "skills": [
     "Python",

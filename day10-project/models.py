@@ -1,11 +1,26 @@
 from pydantic import BaseModel
 
 
-class Education(BaseModel):
+class BachelorsEducation(BaseModel):
     degree: str
     college: str
-    cgpa: str
-    graduation_year: str
+    gpa: str
+    start_year: int
+    graduation_year: int
+
+
+class SchoolEducation(BaseModel):
+    level: str
+    school: str
+    board: str
+    start_year: int
+    completion_year: int
+
+
+class Education(BaseModel):
+    bachelors: BachelorsEducation
+    higher_secondary: SchoolEducation
+    secondary: SchoolEducation
 
 
 class Project(BaseModel):
