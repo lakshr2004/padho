@@ -1,7 +1,3 @@
-# AI Engineering Bootcamp
-
-This repository contains my daily implementations, experiments, and exercises completed during an AI Engineering bootcamp.
-
 ## Repository Structure
 
 | Day | Focus |
@@ -12,21 +8,14 @@ This repository contains my daily implementations, experiments, and exercises co
 | Day 4 | JSON & Pydantic |
 | Day 5 | Resume Matcher |
 | Day 6 | Prompt Engineering |
-
-## Tech Stack
-
-- Python
-- uv
-- Pydantic
-- Large Language Models (LLMs)
-- Generative AI APIs
-
-## Structure
-
-Each day is maintained as a separate project containing its source code, dependencies, lock file, and documentation.
-
-## Notes
-
-- Environment variables and API keys are excluded from version control.
-- Virtual environments and generated files are excluded from version control.
-- uv.lock files are maintained for reproducible dependencies.
+| Day 7 | ReAct Chains |
+| Day 8 | Chaining & Composition |
+| Day 9 | Streaming Responses |
+| Day 10 | Full-Stack AI Candidate Matcher (FastAPI + React) |
+| Day 11 | RAG Introduction |
+| Day 12 | Embeddings & RAG |
+| Day 13 | Full RAG Pipeline |
+| Day 14 | Qdrant Vector DB |
+| Day 15 | Qdrant Full Integration |
+| Day 16 | RAG Evaluation |
+| Day 17 | AI Agents (Claude + Tool Use) |
